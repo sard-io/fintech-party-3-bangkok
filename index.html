@@ -14,8 +14,8 @@
   <meta property="og:image" content="https://sard-io.github.io/fintech-party-3-bangkok/assets/entrance.webp">
   <link rel="icon" href="assets/p2private.svg" type="image/svg+xml">
   <link rel="preload" href="assets/entrance.webp" as="image" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261015-2">
+  <script src="script.js?v=20261015-2" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Перейти к содержанию</a>
@@ -23,9 +23,9 @@
   <header class="site-header" id="site-header">
     <div class="header-inner">
       <div class="brand-pair" aria-label="P2Private совместно с FT Community">
-        <img src="assets/p2private.svg" width="1242" height="205" alt="P2Private">
+        <span class="brand-slot"><img src="assets/p2private.svg" width="1242" height="205" alt="P2Private"></span>
         <span class="brand-cross" aria-hidden="true">×</span>
-        <img src="assets/ft-community.svg" width="558" height="120" alt="FT Community">
+        <span class="brand-slot"><img src="assets/ft-community.svg" width="558" height="120" alt="FT Community"></span>
       </div>
     </div>
   </header>
@@ -85,7 +85,7 @@
         </div>
       </div>
       <div class="container metrics" aria-label="Вечеринка в цифрах" data-reveal>
-        <div class="metric"><span class="metric-value">300–500</span><span class="metric-label">Участников</span></div>
+        <div class="metric"><span class="metric-value">200–400</span><span class="metric-label">Участников</span></div>
         <div class="metric"><span class="metric-value">15 000+</span><span class="metric-label">Охват аудитории</span></div>
         <div class="metric"><span class="metric-value">20+</span><span class="metric-label">Партнёров в медиа</span></div>
         <div class="metric"><span class="metric-value infinity">∞</span><span class="metric-label">Мест размещения</span></div>
@@ -116,18 +116,13 @@
           </figure>
           <figure class="program-item" data-reveal>
             <div class="program-image">
-              <img src="assets/fireworks.webp" alt="Золотые фейерверки над отелем и вечерним бассейном" loading="lazy" decoding="async" width="1600" height="763">
-            </div><figcaption><span class="item-number">04</span><h3>Фейерверки</h3></figcaption>
-          </figure>
-          <figure class="program-item" data-reveal>
-            <div class="program-image">
               <img src="assets/strength-machine.webp" alt="Гость пробует силомер на террасе у бассейна Anantara" loading="lazy" decoding="async" width="1600" height="763">
-            </div><figcaption><span class="item-number">05</span><h3>Силомер</h3></figcaption>
+            </div><figcaption><span class="item-number">04</span><h3>Силомер</h3></figcaption>
           </figure>
           <figure class="program-item" data-reveal>
             <div class="program-image">
               <img src="assets/claw-machine.webp" alt="Игровая хватайка с подарками и мерчем на террасе у бассейна" loading="lazy" decoding="async" width="1600" height="763">
-            </div><figcaption><span class="item-number">06</span><h3>Хватайка с мерчем партнёра</h3></figcaption>
+            </div><figcaption><span class="item-number">05</span><h3>Хватайка с мерчем партнёра</h3></figcaption>
           </figure>
         </div>
         <p class="concept-note">Концепция оформления на основе реальных фотографий нашей локации.</p>
@@ -141,21 +136,58 @@
           <h2 id="partners-title">Ваш бренд<br>в сильном <em>окружении</em></h2>
           <p class="lead">В рамках Fridman Tower</p>
           <p>MELBET является основным спонсором Fridman Tower. Наша FINTECH PARTY 3.0 проходит в рамках этой программы.</p>
-          <p><strong>В день нашей вечеринки</strong> логотип партнёра размещаем на площадке рядом с известными брендами. Такое окружение помогает первому знакомству начаться с доверия.</p>
+          <p><strong>В день нашей вечеринки</strong> логотип партнёра размещаем на площадке рядом с известным брендом MELBET. Такое окружение помогает первому знакомству начаться с доверия.</p>
           <div class="sponsor-lineup" aria-label="Партнёрское окружение">
-            <div><span class="sponsor-role">Основной спонсор<br>Fridman Tower</span><img src="assets/melbet.svg" alt="MELBET Partners" class="melbet-logo"></div>
-            <div><span class="sponsor-role">Партнёр нашей<br>вечеринки</span><span class="your-logo">Ваш<br>логотип</span></div>
+            <div><span class="sponsor-role">Основной спонсор<br>Fridman Tower</span><img src="assets/melbet-wordmark.svg" alt="MELBET" class="melbet-logo"></div>
+            <div><span class="sponsor-role">Основной спонсор<br>нашей вечеринки</span><span class="sponsor-question" aria-label="Место для вашего бренда">?</span></div>
           </div>
           <p class="partner-condition">Для спонсоров, которые не конкурируют с действующими партнёрами отеля.</p>
         </div>
-        <figure class="partner-photo" data-reveal><img src="assets/terrace-tower.webp" width="982" height="1602" alt="Вечерняя терраса отеля у бассейна, пальмы и оформление Fridman Tower" loading="lazy" decoding="async"><figcaption>Anantara Siam Bangkok Hotel</figcaption></figure>
+        <figure class="branding-preview" data-reveal>
+          <div class="branding-scene">
+            <img class="branding-location" src="assets/fridman-location.webp" width="1080" height="1920" alt="Реальный кадр Fridman Tower из видео: бассейн, золотые шары и оформление площадки" loading="lazy" decoding="async">
+            <div class="branding-boards" aria-label="Пример размещения: MELBET и место для основного спонсора нашей вечеринки">
+              <div class="location-sign"><img src="assets/melbet-wordmark.svg" width="106" height="30" alt="MELBET"><span>Fridman Tower</span></div>
+              <div class="location-sign"><span class="location-question" aria-label="Ваш бренд может быть здесь">?</span><span>FINTECH PARTY 3.0</span></div>
+            </div>
+          </div>
+          <figcaption>Ваш бренд может быть здесь.<span>Концепция размещения на реальном кадре локации · только в день вечеринки.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="closing-film section" aria-labelledby="closing-title">
+      <div class="container closing-layout">
+        <div data-reveal>
+          <p class="eyebrow">Живые кадры. Настоящие впечатления.</p>
+          <h2 id="closing-title">Атмосфера<br><em>Fridman Tower</em></h2>
+        </div>
+        <figure class="venue-video closing-video" data-reveal>
+          <div class="video-frame">
+            <video id="fridman-video" controls playsinline preload="none" poster="assets/fridman-tower-poster.jpg" aria-label="Атмосфера Fridman Tower — видео">
+              <source src="assets/fridman-tower-film.mp4" type="video/mp4">
+              Ваш браузер не поддерживает видео. <a href="assets/fridman-tower-film.mp4">Открыть видео</a>.
+            </video>
+            <button class="video-launch" id="final-video-launch" type="button" aria-label="Воспроизвести видео Fridman Tower" hidden>
+              <span class="play-icon" aria-hidden="true">▶</span>
+              <span>Смотреть видео</span>
+            </button>
+          </div>
+          <figcaption>Fridman Tower · 19 секунд атмосферы</figcaption>
+          <p class="video-error" role="status" hidden>Не удалось запустить видео. Попробуйте обновить страницу.</p>
+        </figure>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div><p class="footer-title">FINTECH PARTY 3.0</p><p class="footer-note">P2Private × FT Community</p></div>
+      <p class="footer-title">FINTECH PARTY 3.0</p>
+      <div class="brand-pair" aria-label="P2Private совместно с FT Community">
+        <span class="brand-slot"><img src="assets/p2private.svg" width="1242" height="205" alt="P2Private" loading="lazy"></span>
+        <span class="brand-cross" aria-hidden="true">×</span>
+        <span class="brand-slot"><img src="assets/ft-community.svg" width="558" height="120" alt="FT Community" loading="lazy"></span>
+      </div>
     </div>
   </footer>
 
