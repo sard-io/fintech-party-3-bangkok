@@ -8,21 +8,12 @@
   const videos = [...document.querySelectorAll('.video-frame video')];
   videos.forEach((video) => {
     const frame = video.closest('.video-frame');
-    const launch = frame.querySelector('.video-launch');
     const videoError = frame.parentElement.querySelector('.video-error');
-    launch.hidden = false;
-    launch.addEventListener('click', async () => {
-      videoError.hidden = true;
-      try { await video.play(); }
-      catch { videoError.hidden = false; launch.hidden = false; }
-    });
     video.addEventListener('play', () => {
-      launch.hidden = true;
       videoError.hidden = true;
       videos.forEach((other) => { if (other !== video) other.pause(); });
     });
-    video.addEventListener('ended', () => { launch.hidden = false; });
-    video.addEventListener('error', () => { videoError.hidden = false; launch.hidden = true; });
+    video.addEventListener('error', () => { videoError.hidden = false; });
   });
 
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
